@@ -10,12 +10,12 @@ Then the output will be those random array items in single line, you can copy an
 ### This is how it looks
 ![passgen in action](passgen.png)
 
-### Installation
+### Install
 + Clone the repository
 
         $ git clone https://github.com/Merazi/passgen.c
 
-+ Move the "passgenc" file to a folder that is in your PATH variable
++ Move the "passgenc" file to a folder that is in your $PATH variable
 
         # cp passgenc /usr/share/bin
 

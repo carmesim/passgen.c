@@ -2,24 +2,25 @@
 #include "stdlib.h"
 #include "time.h"
 void delay();
-void main()
+int main()
 {
-        delay();
         time_t time_var;
+        srand((unsigned)time(&time_var));
         int pass_length;
         char arr_password_material[] = "abcdefghkjlmnopqrstuvwxyzABCDEFGHKJLMNOPQRSTUVWZYZ1234567890!@#$%%^&*()_+|\\=-{}][\"'.><,?";
-        // Options for the password generation
+
         printf("How many digits do you want your password to be? ");
         scanf("%d", &pass_length);
 
-        srand((unsigned)time(&time_var));
         printf("Your new password: ");
+	printf("\033[0;32m"); // green color for the password
 
         for (int i = 0; i < pass_length; i++)
-        {
                 printf("%c", arr_password_material[rand() % sizeof(arr_password_material)]);
-        }
         printf("\n");
+	
+	delay();
+	return 0;
 }
 
 void delay()
