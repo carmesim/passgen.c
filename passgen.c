@@ -4,7 +4,7 @@
 void delay();
 int main()
 {
-        time_t time_var;
+        time_t time_var; // Hay un plugin the vim para vscode ;v
         srand((unsigned)time(&time_var));
         int pass_length;
         char arr_password_material[] = "abcdefghkjlmnopqrstuvwxyzABCDEFGHKJLMNOPQRSTUVWZYZ1234567890!@#$%%^&*()_+|\\=-{}][\"'.><,?";
@@ -18,7 +18,7 @@ int main()
         for (int i = 0; i < pass_length; i++)
                 printf("%c", arr_password_material[rand() % sizeof(arr_password_material)]);
         printf("\n");
-	
+        printf("\e[0m");	
 	delay();
 	return 0;
 }
