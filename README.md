@@ -8,7 +8,7 @@ The user inputs an integer to tell the program how many random numbers it is goi
 Then the output will be those random array items in single line, you can copy and paste the password anywhere you want
 
 ### This is how it looks
-![passgen in action](passgen.png)
+![passgen in action](screenshot.png)
 
 ### Install
 + Clone the repository
