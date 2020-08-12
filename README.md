@@ -1,25 +1,35 @@
-# Passgen.c
+# passgen.c
 ---
-This is a simple password generator written in pure C it will generate a strong password for you to use
+this is a simple password generator written in C it will generate a strong password for you to use
 
-### How it works
-        $ passgenc
-The user inputs an integer to tell the program how many random numbers it is going to generate, the program generates those numbers and each number is a random element in a char array that is full of letters, numbers and symbols.
-Then the output will be those random array items in single line, you can copy and paste the password anywhere you want
+### how it works
+        $ spg <options>
+if no options were specified, spg will ask you for your password length.
+        -h, --help      	Show this message and exit.
+        -v, --vocab     	Set a vocabulary on which passwords are generated from.
+        -s, --size      	Set the size of the generated password.
 
-### This is how it looks
+### this is how it looks
 ![passgen in action](screenshot.png)
 
-### Install
-+ Clone the repository
+### depends on
+- gcc
+- qmake
+- make
 
-        $ git clone https://github.com/Merazi/passgen.c
+### installation
+- clone the git repo
 
-+ Move the "passgenc" file to a folder that is in your $PATH variable
+        $ git clone https://github.com/carmesim/passgen.c
 
-        # cp passgenc /usr/share/bin
+- build the project
 
-### Uninstall
-+ Remove the passgen file from the folder you installed it before
+        $ qmake && make
 
-        # rm /usr/share/bin/passgenc
+- copy the binary to your path
+
+        # cp src /usr/bin/spg
+
+### uninstall
++ remove the src binary from your path
+        # rm /usr/share/bin/spg
