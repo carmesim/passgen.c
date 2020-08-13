@@ -1,23 +1,23 @@
 # passgen.c
----
-this is a simple password generator written in C it will generate a strong password for you to use
 
-### how it works
+this is a simple password generator written in C, it will generate a strong password for you to use
+
+## how it works
         $ spg <options>
-if no options were specified, spg will ask you for your password length.
-        -h, --help      	Show this message and exit.
+if no options were specified, spg will ask you for your password length, right now there are only two options
+
         -v, --vocab     	Set a vocabulary on which passwords are generated from.
         -s, --size      	Set the size of the generated password.
 
-### this is how it looks
+## this is how it looks
 ![passgen in action](screenshot.png)
 
-### depends on
+## depends on
 - gcc
-- qmake
 - make
+- qmake
 
-### installation
+## installation
 - clone the git repo
 
         $ git clone https://github.com/carmesim/passgen.c
@@ -30,6 +30,6 @@ if no options were specified, spg will ask you for your password length.
 
         # cp src /usr/bin/spg
 
-### uninstall
+## uninstall
 + remove the src binary from your path
         # rm /usr/share/bin/spg
